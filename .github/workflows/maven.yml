@@ -15,7 +15,7 @@ on:
     types: [opened, synchronize, reopened]
 jobs:
   build:
-    name: Build
+    name: Build custom math library
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -41,5 +41,7 @@ jobs:
       - name: Build and analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: mvn clean install
+        run: mvn clean install -DskipTests
+      - name: Running tests
+        run: mvn test
 
