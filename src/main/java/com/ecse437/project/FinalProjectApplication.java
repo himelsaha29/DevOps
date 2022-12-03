@@ -1,4 +1,4 @@
-package com.ecse437.finalproject.FinalProject;
+package com.ecse437.project;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,4 +1,4 @@
-package com.ecse437.finalproject.FinalProject;
+package com.ecse437.project;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
