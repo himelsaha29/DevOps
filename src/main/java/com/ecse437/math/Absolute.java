@@ -4,7 +4,7 @@ public class Absolute {
 
     public static int value(int a) {
 
-        return 0;
+        return (a < 0) ? -a: a;
     }
 
 }
