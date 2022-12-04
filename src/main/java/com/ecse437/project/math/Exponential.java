@@ -1,6 +1,6 @@
-package com.ecse437.math;
+package com.ecse437.project.math;
 
-public class SquareRoot {
+public class Exponential {
 
     public static double value(double a) {
 
