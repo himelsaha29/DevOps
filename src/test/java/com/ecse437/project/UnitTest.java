@@ -1,6 +1,6 @@
 package com.ecse437.project;
 
-import com.ecse437.math.*;
+import com.ecse437.project.math.*;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 

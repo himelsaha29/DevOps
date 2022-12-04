@@ -1,6 +1,6 @@
-package com.ecse437.math;
+package com.ecse437.project.math;
 
-public class Exponential {
+public class LogBase10 {
 
     public static double value(double a) {
 
