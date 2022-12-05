@@ -2,8 +2,12 @@ package com.ecse437.project.math;
 
 public class AddExact {
 
-    public static int values(int a, int b) {
+    public static long values(long a, long b) {
+        long r = a + b;
 
-        return 0;
+        if (((a ^ r) & (b ^ r)) < 0) {
+            throw new ArithmeticException("long overflow");
+        }
+        return r;
     }
 }

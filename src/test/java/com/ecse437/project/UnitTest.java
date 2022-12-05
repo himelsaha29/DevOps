@@ -36,8 +36,8 @@ public class UnitTest {
     }
     @Test
     void testAddExact() {
-        int x = -1;
-        int y = 0;
+        long x = -1;
+        long y = 0;
         assertEquals(Math.addExact(x, y), AddExact.values(x, y));
     }
     @Test
