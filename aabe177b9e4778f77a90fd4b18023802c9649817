@@ -16,6 +16,23 @@
       "message": "CelsiusToFahrenheit implemented, please review",
       "revId": "aabe177b9e4778f77a90fd4b18023802c9649817",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "58b2a629_c898b4b7",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020599
+      },
+      "writtenOn": "2022-12-06T17:03:57Z",
+      "side": 1,
+      "message": "👍",
+      "revId": "aabe177b9e4778f77a90fd4b18023802c9649817",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
