@@ -1,7 +1,6 @@
 package com.ecse437.project;
 
 import com.ecse437.project.math.CelsiusToFahrenheit;
-import com.ecse437.project.math.CelsiusToFahrenheit;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
@@ -12,7 +11,7 @@ public class IntegrationTest {
     CelsiusToFahrenheit celsius = new CelsiusToFahrenheit();
     @Test
     void testCelsiusToFahrenheit() {
-        int celsiusValue = 18;
-        assertEquals(64, celsius.convert(celsiusValue));
+        int celsiusValue = 41;
+        assertEquals(105, celsius.convert(celsiusValue));
     }
 }
