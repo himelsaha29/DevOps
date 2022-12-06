@@ -16,6 +16,23 @@
       "message": "Square root method implemented, test is passing",
       "revId": "50c1ffa2921838b8456125195aa7292035ef96c0",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "4acdde4b_f65adeba",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020599
+      },
+      "writtenOn": "2022-12-06T17:02:41Z",
+      "side": 1,
+      "message": "looks good to me!",
+      "revId": "50c1ffa2921838b8456125195aa7292035ef96c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
