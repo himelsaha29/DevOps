@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "78fd29bd_dc7a68cd",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020594
+      },
+      "writtenOn": "2022-12-06T00:05:02Z",
+      "side": 1,
+      "message": "AddExact implemented, test is passing. Please review",
+      "revId": "86e372aae5a794633b4a502c64fc57b534661d82",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
