@@ -16,6 +16,23 @@
       "message": "Please review my exponential implementation",
       "revId": "5823b5a5fed8f5769e2f53ed9d0c0334aaba955b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "42555f0e_85176942",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020599
+      },
+      "writtenOn": "2022-12-06T17:03:46Z",
+      "side": 1,
+      "message": "great work!",
+      "revId": "5823b5a5fed8f5769e2f53ed9d0c0334aaba955b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
