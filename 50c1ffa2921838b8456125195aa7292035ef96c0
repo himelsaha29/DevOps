@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "5295165c_b28e8bb5",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020594
+      },
+      "writtenOn": "2022-12-06T15:54:37Z",
+      "side": 1,
+      "message": "Square root method implemented, test is passing",
+      "revId": "50c1ffa2921838b8456125195aa7292035ef96c0",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
