@@ -6,7 +6,7 @@ public class CoordinateDistance {
         double difference_x = x2 - x1;
         double difference_y = y2 - y1;
 
-        double intermediate = AddExact.values((long)(difference_x),
+        double intermediate = AddExact.values((long)(difference_x * difference_x),
                 (long)(difference_y * difference_y));
 
         return (int) SquareRoot.value(intermediate);

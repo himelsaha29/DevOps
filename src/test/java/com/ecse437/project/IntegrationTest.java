@@ -20,6 +20,6 @@ public class IntegrationTest {
 
     @Test
     void testCoordinateDistance() {
-        assertEquals(2, coordinateDistance.value(1,2,4,6));
+        assertEquals(5, coordinateDistance.value(1,4,1,5));
     }
 }
