@@ -4,6 +4,7 @@ public class LogBase10 {
 
     public static double value(double a) {
 
-        return 0.0;
+        double answer = Math.log(a) / Math.log(10);
+        return (int)answer;
     }
 }

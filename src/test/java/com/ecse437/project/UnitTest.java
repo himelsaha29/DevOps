@@ -26,13 +26,13 @@ public class UnitTest {
     }
     @Test
     void testLogBase10() {
-        int value = -1;
-        assertEquals(Math.log10(value), LogBase10.value(value));
+        double value = 99;
+        assertEquals((int)Math.log10(value), LogBase10.value(value));
     }
     @Test
     void testExponential() {
-        int value = -1;
-        assertEquals(Math.exp(value), Exponential.value(value));
+        int value = 76;
+        assertEquals((int)Math.exp(value), Exponential.value(value));
     }
     @Test
     void testAddExact() {
