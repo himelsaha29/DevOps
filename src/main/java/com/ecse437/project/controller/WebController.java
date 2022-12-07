@@ -1,10 +1,7 @@
 package com.ecse437.project.controller;
 
 import com.ecse437.project.math.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -62,7 +59,7 @@ public class WebController {
         return "Fahrenheit value of " + String.valueOf(value) + " in Celsius " + " is " + String.valueOf(temperature.convert(value));
     }
 
-    @RequestMapping(value = "/coordinatedistance/{value1}/{value2}/{value3}/{value4}")
+    @RequestMapping(value = "/coordinatedistance/{value1}/{value2}/{value3}/{value4}", method = RequestMethod.POST)
     public String getCoordinateDistance(@PathVariable(name = "value1", required = true) double value1,
                                         @PathVariable(name = "value2", required = true) double value2,
                                         @PathVariable(name = "value3", required = true) double value3,
