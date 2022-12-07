@@ -11,39 +11,73 @@ public class UnitTest {
 
     @Test
     void testAbsolute() {
-        int value = -1;
-        assertEquals(Math.abs(value), Absolute.value(value));
+        int values[] = new int[] {-6, -1, 0, 24, 11};
+
+        for(int i = 0; i < values.length; i++) {
+            assertEquals(Math.abs(values[i]), Absolute.value(values[i]));
+        }
+
     }
     @Test
     void testRound() {
-        int value = -1;
-        assertEquals(Math.round(value), Round.value(value));
+        float values[] = new float[] {-700f, -6.3f, -1.1f, 0.0f, 24.32f, 11.02f, 899.9f};
+
+        for(int i = 0; i < values.length; i++) {
+            assertEquals(Math.round(values[i]), Round.value(values[i]));
+        }
+
     }
     @Test
     void testSquareRoot() {
-        int value = 12;
-        assertEquals(Math.sqrt(value), SquareRoot.value(value));
+        double values[] = new double[] {-6.3, -1.1, 0.0, 24.32, 11.02};
+
+        for(int i = 0; i < values.length; i++) {
+            assertEquals(Math.sqrt(values[i]), SquareRoot.value(values[i]));
+        }
+        assertEquals(Math.sqrt(Double.NaN), SquareRoot.value(Double.NaN));
+
+
     }
     @Test
     void testLogBase10() {
-        double value = 99;
-        assertEquals((int)Math.log10(value), LogBase10.value(value));
+        double values[] = new double[] {-6.3, -1.1, 0.0, 24.32, 11.02};
+
+        for(int i = 0; i < values.length; i++) {
+            assertEquals((int)Math.log10(values[i]), LogBase10.value(values[i]));
+        }
+
+
     }
     @Test
     void testExponential() {
-        int value = 76;
-        assertEquals((int)Math.exp(value), Exponential.value(value));
+        int values[] = new int[] {-7, -2, 0, 24, 11};
+
+        for(int i = 0; i < values.length; i++) {
+            assertEquals((int)Math.exp(values[i]), Exponential.value(values[i]));
+        }
+
     }
     @Test
     void testAddExact() {
-        int x = -1;
-        int y = 0;
-        assertEquals(Math.addExact(x, y), AddExact.values(x, y));
+
+        long values[][] = new long[][] {{-200l, 2l}, {0, -350l},{432l, 53l}, {44l, -24l}, {9223372036854774808l, 9223372036854775708l}};
+
+        for(int i = 0; i < values.length; i++) {
+            if(i < 4) {
+                assertEquals(Math.addExact(values[i][0], values[i][1]), (long)AddExact.values(values[i][0], values[i][1]));
+            } else {
+                assertEquals("long overflow", (String) AddExact.values(values[i][0], values[i][1]));
+            }
+        }
+
     }
     @Test
     void testMax() {
-        int x = -1;
-        int y = -1;
-        assertEquals(Math.max(x, y), Max.values(x, y));
+        int values[][] = new int[][] {{-20, 5}, {0, 0},{-2, -2}, {50, 9}, {0, 20}};
+
+        for(int i = 0; i < values.length; i++) {
+            assertEquals(Math.max(values[i][0], values[i][1]), Max.values(values[i][0], values[i][1]));
+        }
+
     }
 }
