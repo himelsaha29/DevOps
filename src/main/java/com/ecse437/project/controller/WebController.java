@@ -1,10 +1,7 @@
 package com.ecse437.project.controller;
 
 import com.ecse437.project.math.*;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -14,7 +11,6 @@ public class WebController {
 
     @GetMapping(value = "/test")
     public String test() {
-
         return "Works";
     }
 
@@ -51,15 +47,26 @@ public class WebController {
 
     @RequestMapping(value = "/add/{value1}/{value2}")
     public String getAddExact(@PathVariable(name = "value1", required = true) int value1,
-                              @PathVariable(name = "value2", required = true) int value2) {
+                                @PathVariable(name = "value2", required = true) int value2) {
         return "The addition of " + String.valueOf(value1) + " and " + String.valueOf(value2) + " is " + String.valueOf(AddExact.values(value1, value2));
     }
 
     @RequestMapping(value = "/celsiustofahrenheit/{value}")
-    public String getFahrenheit(@PathVariable(name = "value", required = true) double value) {
+    public String getFahrenheit(@PathVariable(name = "value", required = true) int value) {
 
-        ArrayList<Double> results = new ArrayList<>();
+        CelsiusToFahrenheit temperature = new CelsiusToFahrenheit();
 
-        return "Fahrenheit value of " + String.valueOf(value) + " in Celsius " + " is " + String.valueOf(0);
+        return "Fahrenheit value of " + String.valueOf(value) + " in Celsius " + " is " + String.valueOf(temperature.convert(value));
+    }
+
+    @RequestMapping(value = "/coordinatedistance/{value1}/{value2}/{value3}/{value4}", method = RequestMethod.POST)
+    public String getCoordinateDistance(@PathVariable(name = "value1", required = true) double value1,
+                                        @PathVariable(name = "value2", required = true) double value2,
+                                        @PathVariable(name = "value3", required = true) double value3,
+                                        @PathVariable(name = "value4", required = true) double value4) {
+
+        CoordinateDistance distance = new CoordinateDistance();
+
+        return "Distance is " + String.valueOf(distance.value(value1, value2, value3, value4));
     }
 }
