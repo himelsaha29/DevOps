@@ -1,8 +1,15 @@
 package com.ecse437.project.math;
 
 public class SquareRoot {
-
+    /**
+     * Finds square root value of a number
+     * @param a value for which square root is to be determined
+     * @return square root of the input
+     */
     public static double value(double a) {
+
+        if (a < 0 || a == Double.NaN) return Double.NaN;
+        else if(a == 0) return 0;
 
         double lo = Math.min(1, a), hi = Math.max(1, a), mid = 0;
 

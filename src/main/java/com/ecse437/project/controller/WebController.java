@@ -14,7 +14,6 @@ public class WebController {
 
     @GetMapping(value = "/test")
     public String test() {
-
         return "Works";
     }
 
@@ -56,10 +55,21 @@ public class WebController {
     }
 
     @RequestMapping(value = "/celsiustofahrenheit/{value}")
-    public String getFahrenheit(@PathVariable(name = "value", required = true) double value) {
+    public String getFahrenheit(@PathVariable(name = "value", required = true) int value) {
 
-        ArrayList<Double> results = new ArrayList<>();
+        CelsiusToFahrenheit temperature = new CelsiusToFahrenheit();
 
-        return "Fahrenheit value of " + String.valueOf(value) + " in Celsius " + " is " + String.valueOf(0);
+        return "Fahrenheit value of " + String.valueOf(value) + " in Celsius " + " is " + String.valueOf(temperature.convert(value));
+    }
+
+    @RequestMapping(value = "/coordinatedistance/{value1}/{value2}/{value3}/{value4}")
+    public String getCoordinateDistance(@PathVariable(name = "value1", required = true) double value1,
+                                        @PathVariable(name = "value2", required = true) double value2,
+                                        @PathVariable(name = "value3", required = true) double value3,
+                                        @PathVariable(name = "value4", required = true) double value4) {
+
+        CoordinateDistance distance = new CoordinateDistance();
+
+        return "Distance is " + String.valueOf(distance.value(value1, value2, value3, value4));
     }
 }
