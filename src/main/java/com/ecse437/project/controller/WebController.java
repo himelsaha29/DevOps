@@ -9,6 +9,7 @@ import java.util.List;
 @RestController
 public class WebController {
 
+    
     @GetMapping(value = "/test")
     public String test() {
         return "Works";
