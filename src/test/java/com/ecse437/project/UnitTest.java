@@ -26,8 +26,8 @@ public class UnitTest {
     }
     @Test
     void testLogBase10() {
-        int value = -1;
-        assertEquals(Math.log10(value), LogBase10.value(value));
+        double value = 99;
+        assertEquals((int)Math.log10(value), LogBase10.value(value));
     }
     @Test
     void testExponential() {
