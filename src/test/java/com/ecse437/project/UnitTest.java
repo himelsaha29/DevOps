@@ -31,8 +31,8 @@ public class UnitTest {
     }
     @Test
     void testExponential() {
-        int value = -1;
-        assertEquals(Math.exp(value), Exponential.value(value));
+        int value = 76;
+        assertEquals((int)Math.exp(value), Exponential.value(value));
     }
     @Test
     void testAddExact() {

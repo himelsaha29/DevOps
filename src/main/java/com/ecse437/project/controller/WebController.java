@@ -45,7 +45,7 @@ public class WebController {
     }
 
     @RequestMapping(value = "/exponential/{value}")
-    public String getExponential(@PathVariable(name = "value", required = true) double value) {
+    public String getExponential(@PathVariable(name = "value", required = true) int value) {
         return "The exponential of " + String.valueOf(value) + " is " + String.valueOf(Exponential.value(value));
     }
 
