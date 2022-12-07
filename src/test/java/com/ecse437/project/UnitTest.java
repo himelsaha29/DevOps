@@ -21,7 +21,7 @@ public class UnitTest {
     }
     @Test
     void testSquareRoot() {
-        int value = -1;
+        int value = 12;
         assertEquals(Math.sqrt(value), SquareRoot.value(value));
     }
     @Test
